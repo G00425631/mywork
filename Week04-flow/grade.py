@@ -9,22 +9,22 @@
 
 #Author: Dorina Agache 
 
-percentage = int(input("Please enter the precentage: "))
+percentage = float(input("Please enter the precentage: "))
 print(f"The student's precentage is {percentage}")
 
 if percentage < 0 or percentage > 100:
-    print ("Please enter a nuber between 0 and 100")
+    print ("Please enter a number between 0 and 100")
 
-elif percentage < 40:
-     print ("Fail")
-    
-elif percentage < 50:
+elif percentage + 0.5 < 40:
+     print ("Fail") 
+
+elif percentage +0.5 < 50:
      print("Pass")
 
-elif percentage < 60:
+elif percentage + 0.5 < 60:
      print("Merit 2")
 
-elif percentage < 70:
+elif percentage + 0.5 < 70: 
      print("Merit 1")
 
 else:
