@@ -1,6 +1,7 @@
 #grade.py
 #This program reads in a student’s percentage mark and prints out 
-#corresponding grade:
+#corresponding grade, rounding up grade if precentage 
+#missing 0.5 to achieve next grade bracket:
 # Under 40% => Fail
 # Between 40% and 49% => Pass
 # Between 50% and 59% => Merit 2
