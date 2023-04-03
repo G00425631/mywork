@@ -1,4 +1,4 @@
-#guess2.py
+#guess3.py
 
 #This prompts the user to guess a number
 # The program generates a random number for the user to guess between 0 to 100
