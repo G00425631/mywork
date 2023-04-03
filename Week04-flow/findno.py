@@ -4,25 +4,16 @@
 
 #Author: Dorina Agache 
 
-print("Your task is to find a cerain number, let's start!")
+print("Your task is to find a certain number, let's start!")
 
-number = int(input("Please enter a number: "))
+numberToGuess = -1
 
+guess = int(input("Please guess the number:"))
+while guess != numberToGuess:
+    if guess < numberToGuess:
+        print ("The number you have guessed is too low!")
+    else:
+        print ("The number you have guessed is too high!")
+    guess = int(input("Please guess again:"))
 
-while number < -100 or number > 100:
-    number = int(input("You are very far from the number you are looking for, try a two digit number:" ))
-    
-elif number < 100 or number > 0:
-     print ("Try a negative number instead:") 
-    
-
-elif number > -100 or number <0:
-     print("Close...it is a negative number we are looking for")
- 
-
-elif number >-10 or number <0:
-     print("You are very close!")
-
-
-else :
- print ("CONGRATULATIONS! The number you were looking for is -1")
+print ("CONGRATULATIONS! The number you were looking for is" , numberToGuess)
