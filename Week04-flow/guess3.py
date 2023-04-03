@@ -1,13 +1,18 @@
 #guess2.py
 
 #This prompts the user to guess a number
+# The program generates a random number for the user to guess between 0 to 100
 # the program keeps prompting the user to 
 # guess the number until the user gets the right one
 # The program tells the user if the number is too high/low
 
 # Authour: Dorina Agache
+import random
 
-numberToGuess = 30
+numberToGuess = random.randint(0, 100) 
+#I looked up W3 schools for this function:https://www.w3schools.com/python/module_random.asp
+
+print ("A random number was generated, time to guess!")
 
 guess = int(input("Please guess the number:"))
 while guess != numberToGuess:
